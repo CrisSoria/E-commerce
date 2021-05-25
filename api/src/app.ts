@@ -16,10 +16,11 @@ import bcrypt from "bcrypt";
 const app: express.Application = express();
 
 const url = `https://localhost:5000`;
+const urlFront = "https://compu-henry.netlify.app";
 
 const corsOptions = {
   credentials: true,
-  origin: "http://localhost:3000",
+  origin: urlFront,
 };
 
 var googleStrategy = googleOAuth.Strategy;
@@ -166,7 +167,7 @@ app.use(cors(corsOptions));
 app.use(express.urlencoded({ extended: true, limit: "50mb" }));
 app.use(express.json({ limit: "50mb" }));
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "http://localhost:3000"); // update to match the domain you will make the request from
+  res.header("Access-Control-Allow-Origin", urlFront); // update to match the domain you will make the request from
   res.header("Access-Control-Allow-Credentials", "true");
   res.header(
     "Access-Control-Allow-Headers",
@@ -205,7 +206,7 @@ app.get(
 app.get(
   "/auth/facebook/callback",
   passport.authenticate("facebook", {
-    successRedirect: "http://localhost:3000/Home",
+    successRedirect: `${urlFront}/Home`,
     failureRedirect: `${url}/graphql`,
   })
 );
@@ -222,7 +223,7 @@ app.get(
   passport.authenticate("google", { failureRedirect: `${url}/graphql` }),
   function (req, res) {
     //successful authentication
-    res.redirect("http://localhost:3000/Home");
+    res.redirect(`${urlFront}/Home`);
   }
 );
 
