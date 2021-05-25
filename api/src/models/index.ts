@@ -30,9 +30,22 @@ export interface DB {
 
 const { DB_NAME, DB_PORT, DB_PASSWORD, DB_URL, DB_USER } = process.env;
 
-export const sequelize = new Sequelize(
-  `postgres://${DB_USER}:${DB_PASSWORD}@${DB_URL}:${DB_PORT}/${DB_NAME}`
-);
+const postgresDB =
+  process.env.DATABASE_URL ||
+  `postgres://${DB_USER}:${DB_PASSWORD}@${DB_URL}:${DB_PORT}/${DB_NAME}`;
+
+export const sequelize = new Sequelize(postgresDB, {
+  dialect: "postgres",
+  protocol: "postgres",
+  dialectOptions: {
+    ssl: {
+      require: true,
+      rejectUnauthorized: false,
+    },
+  },
+  logging: false, // set to console.log to see the raw SQL queries
+  native: false, // lets Sequelize know we can use pg-native for ~30% more speed
+});
 
 const Product = ProductFactory(sequelize);
 const Category = CategoryFactory(sequelize);
