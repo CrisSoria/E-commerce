@@ -1,3 +1,4 @@
+### [Live Site](https://compu-henry.netlify.app)
 # E-commerce Compu Henry
 
 Página web para venta de insumos informáticos con todas las funcionalidades de un e-commerce.
@@ -16,13 +17,6 @@ presentados a un Product Owner.
 - Utilizar Metodologías Ágiles.
 - Trabajar en equipo.
 - Usar y practicar testing.
-
-<!--
-
-
-
-
-<img src="https://i.ibb.co/ggt95G1/ecomm-carrito.png" alt="ecomm-carrito" border="0" width="40%" align="left"> -->
 
 <br/> 
 <hr/>
