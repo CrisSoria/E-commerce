@@ -27,8 +27,7 @@ presentados a un Product Owner.
 <br/> 
 <hr/>
 
-<img src="https://i.ibb.co/5nz078q/ecomm-favs.png" alt="ecomm-favs" border="0" width="49%" >
-<img src="https://i.ibb.co/6g4YN8S/ecom-login.png" alt="ecom-login" border="0" width="49%">
+<img src="https://i.ibb.co/5nz078q/ecomm-favs.png" alt="ecomm-favs" border="0" width="49%" ><img src="https://i.ibb.co/6g4YN8S/ecom-login.png" alt="ecom-login" border="0" width="49%">
 
 <br/> 
 <hr/>
@@ -36,15 +35,21 @@ presentados a un Product Owner.
 <br/> 
 <img src="https://i.ibb.co/Fq2Vy9L/ecomm-armar-PC.png" alt="ecomm-armar-PC" border="0" width="32%" align="right" >
 
+<p aling="center">
 Uno de las principales problemáticas para la venta de insumos informáticos, es el desconocimiento por parte del comprador frete a la amplia gama de opciones existentes para satisfacer sus necesidades.
 Para ello ideamos un sistema de productos asociados compatibles. Permitiendo así a cualquier usuario armar su computadora independientemente de sus conocimietos en cuestiones de hadware.
-
+</p>
+  
 <br/> 
 <br/> 
 <br/>
 
-<span style="display:block">
+<br/> 
 <hr/>
+<br/>
+
+<span style="display:block">
+
 <img src="https://i.ibb.co/ggt95G1/ecomm-carrito.png" alt="ecomm-carrito" border="0" width="69%" >
 <img src="https://i.ibb.co/SJg4K4V/ecomm-mercado-Pago.png" alt="ecomm-mercado-Pago" border="0" width="29%" >
 </span>
