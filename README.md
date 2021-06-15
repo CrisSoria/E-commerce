@@ -1,4 +1,3 @@
-### [Live Site](https://compu-henry.netlify.app)
 # E-commerce Compu Henry
 
 Página web para venta de insumos informáticos con todas las funcionalidades de un e-commerce.
